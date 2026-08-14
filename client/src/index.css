@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -31,10 +31,24 @@ body {
   background: var(--bg-primary);
   color: #ffffff;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
@@ -81,8 +95,13 @@ body {
 .animate-slide-right { animation: slideInRight 0.6s ease forwards; }
 
 /* Utility */
-.font-syne { font-family: 'Syne', sans-serif; }
-.font-mono { font-family: 'JetBrains Mono', monospace; }
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
 
 /* Glass effect */
 .glass {

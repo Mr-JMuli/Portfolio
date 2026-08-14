@@ -4,17 +4,17 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const personal = {
   name: "John Muli",
   tagline: "Securing Systems. Architecting the Future.",
-  email: "john.muli@email.com",
+  email: "jmuli866@gmail.com",
   location: "Nairobi, Kenya",
-  github: "https://github.com/johnmuli",
-  linkedin: "https://linkedin.com/in/johnmuli",
+  github: "https://github.com/Mr-JMuli",
+  linkedin: "https://www.linkedin.com/in/john-muli/",
   availableForWork: true,
   titles: [
     "Cybersecurity Engineer",
     "Cloud & Infrastructure Engineer",
-    "ICT Systems Administrator",
+    "System Administrator",
     "DevOps Enthusiast",
-    "AI & Security Engineer",
+    "AI Practitioner",
     "MERN Stack Developer",
   ],
 };
@@ -77,7 +77,7 @@ const skills = [
     items: [
       { name: "MikroTik", level: 85 },
       { name: "Ubiquiti", level: 80 },
-      { name: "TCP/IP", level: 90 },
+      { name: "CISCO", level: 90 },
       { name: "VPNs", level: 82 },
       { name: "WAN Load Balancing", level: 78 },
     ],
@@ -236,25 +236,24 @@ const certifications = [
 
 const experience = [
   {
-    role: "ICT Officer",
+    role: "IT Officer",
     company: "Malibu Pharmacy",
-    period: "2022 — Present",
+    period: "2024 — Present",
     location: "Nairobi, Kenya",
     highlights: [
       "Managed complete ICT infrastructure for multi-branch pharmacy chain",
       "Deployed Kaspersky EDR across 30+ endpoints — zero security incidents",
       "Implemented Microsoft 365 tenant with Entra ID, Exchange Online and SharePoint",
       "Built MikroTik WAN load balancing with 4-ISP failover — 99.8% uptime",
-      "Developed pharmacy MERN stack management system with POS and analytics",
       "Deployed and maintained CCTV systems across all branches with remote access",
     ],
     tech: ["Microsoft 365", "MikroTik", "Kaspersky", "Linux", "MERN Stack", "CCTV"],
     color: "#00d4ff",
   },
   {
-    role: "ICT Lead Consultant",
+    role: "IT Lead Consultant",
     company: "Techsavvy Experts",
-    period: "2020 — 2022",
+    period: "2021 — 2023",
     location: "Nairobi, Kenya",
     highlights: [
       "Led ICT consulting engagements across SME and enterprise clients in Nairobi",
@@ -263,19 +262,21 @@ const experience = [
       "Delivered cybersecurity assessments and remediation roadmaps",
       "Managed cloud migrations to Microsoft 365 for 5 client organizations",
     ],
-    tech: ["Network Design", "Microsoft 365", "Ubiquiti", "Cloud Migration", "Security Assessment"],
+    tech: ["Network Design", "Microsoft 365",  "Security Assessment"],
     color: "#4f8ef7",
   },
   {
-    role: "ICT Administrator",
+    role: "IT Administrator",
     company: "FEP Sacco",
-    period: "2018 — 2020",
+    period: "2019 — 2021",
     location: "Nairobi, Kenya",
     highlights: [
-      "Administered Active Directory for 150+ users across two office locations",
-      "Managed Windows Server 2016/2019: DNS, DHCP, File Services",
+      "Administered Active Directory for 150+ users across numerous office locations",
+      "Managed Windows Server 2012 R2: DNS, DHCP, File Services",
       "Implemented VLAN network segmentation for financial data security compliance",
       "Deployed endpoint security solution — reduced malware incidents by 80%",
+      "Administered Suse enterprise Linux servers for internal applications and services",
+      "Administered Orbit R core banking system",
     ],
     tech: ["Active Directory", "Windows Server", "SQL Server", "VLAN", "Endpoint Security"],
     color: "#00e676",
@@ -583,7 +584,7 @@ function HeroSection() {
             <h1 style={{
               fontSize: "clamp(40px, 6vw, 72px)",
               fontWeight: 800, lineHeight: 1.05, margin: "0 0 12px",
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Space Grotesk', sans-serif",
               background: "linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.75) 100%)",
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
             }}>
@@ -634,7 +635,7 @@ function HeroSection() {
                 { num: "20+", label: "Projects Delivered" },
               ].map((s) => (
                 <div key={s.label}>
-                  <div style={{ fontSize: 28, fontWeight: 800, color: "#00d4ff", fontFamily: "'Syne', sans-serif" }}>{s.num}</div>
+                  <div style={{ fontSize: 28, fontWeight: 800, color: "#00d4ff", fontFamily: "'Space Grotesk', sans-serif" }}>{s.num}</div>
                   <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", letterSpacing: "0.05em" }}>{s.label}</div>
                 </div>
               ))}
@@ -715,7 +716,7 @@ function AboutSection() {
   return (
     <section id="about" style={{ padding: "120px 32px", maxWidth: 1200, margin: "0 auto" }} ref={ref}>
       <SectionLabel>About</SectionLabel>
-      <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
+      <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
         The Engineer Behind the Systems
       </h2>
 
@@ -773,7 +774,7 @@ function SkillsSection() {
     <section id="skills" style={{ padding: "120px 32px", background: "rgba(255,255,255,0.02)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }} ref={ref}>
         <SectionLabel>Core Expertise</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
           Technical Stack & Skills
         </h2>
 
@@ -847,7 +848,7 @@ function ProjectsSection() {
     <section id="projects" style={{ padding: "120px 32px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <SectionLabel>Featured Work</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 32px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 32px", color: "#fff" }}>
           Projects & Deployments
         </h2>
 
@@ -960,7 +961,7 @@ function LabsSection() {
     <section id="labs" style={{ padding: "120px 32px", background: "rgba(0,0,0,0.3)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <SectionLabel>Hands-On Practice</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 16px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 16px", color: "#fff" }}>
           Interactive Labs
         </h2>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 15, marginBottom: 48, maxWidth: 540 }}>
@@ -1032,7 +1033,7 @@ function CertificationsSection() {
     <section id="certifications" style={{ padding: "120px 32px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <SectionLabel>Credentials</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
           Certifications & Badges
         </h2>
 
@@ -1121,7 +1122,7 @@ function ExperienceSection() {
     <section id="experience" style={{ padding: "120px 32px", background: "rgba(255,255,255,0.02)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <SectionLabel>Career History</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 48px", color: "#fff" }}>
           Professional Experience
         </h2>
 
@@ -1202,7 +1203,7 @@ function AIVisionSection() {
     <section id="ai-vision" style={{ padding: "120px 32px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <SectionLabel>Future-Focused</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 16px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 16px", color: "#fff" }}>
           AI & Future Technologies
         </h2>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 15, maxWidth: 560, marginBottom: 60 }}>
@@ -1294,7 +1295,7 @@ function ContactSection() {
     <section id="contact" style={{ padding: "120px 32px", background: "rgba(0,0,0,0.3)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <SectionLabel>Get In Touch</SectionLabel>
-        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", margin: "12px 0 16px", color: "#fff" }}>
+        <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Space Grotesk', sans-serif", margin: "12px 0 16px", color: "#fff" }}>
           Let's Build Something Secure
         </h2>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 15, maxWidth: 500, marginBottom: 60 }}>
