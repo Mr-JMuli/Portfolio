@@ -2,12 +2,15 @@
 export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
+
   theme: {
     extend: {
       fontFamily: {
-        syne: ['Syne', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
+
       colors: {
         cyber: {
           cyan: '#00d4ff',
@@ -20,14 +23,20 @@ export default {
           bg: '#050814',
         },
       },
+
       animation: {
         'pulse-slow': 'pulse 3s ease-in-out infinite',
         'blink': 'blink 1s step-end infinite',
       },
+
       keyframes: {
-        blink: { '0%, 100%': { opacity: 1 }, '50%': { opacity: 0 } },
+        blink: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0 },
+        },
       },
     },
   },
+
   plugins: [],
 }
